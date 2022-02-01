@@ -1,16 +1,10 @@
 const linebot = require('linebot');
 require('dotenv').config();
 
-// const bot = linebot({
-//     channelId: process.env.CHANNEL_ID,
-//     channelSecret: process.env.CHANNEL_SECRET,
-//     channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
-// });
-
 const bot = linebot({
-    channelId: CHANNEL ID,
-    channelSecret: CHANNEL SECRET,
-    channelAccessToken: CHANNEL ACCESS TOKEN
+    channelId: CHANNEL_ID,
+    channelSecret: CHANNEL_SECRET,
+    channelAccessToken: CHANNEL_ACCESS_TOKEN
 });
 
 const linebotParser = bot.parser();
