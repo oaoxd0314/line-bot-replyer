@@ -10,4 +10,5 @@ app.post('/', linebotParser);
 const server = app.listen(process.env.PORT || 8080, function() {
     const port = server.address().port;
     console.log("App now running on port", port);
+    console.log("2/1 21:00")
 });

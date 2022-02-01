@@ -1,6 +1,8 @@
 const linebot = require('linebot');
 require('dotenv').config();
 
+console.log(process.env.CHANNEL_ID)
+
 const bot = linebot({
     channelId: process.env.CHANNEL_ID,
     channelSecret: process.env.CHANNEL_SECRET,
@@ -21,8 +23,10 @@ function eventHandler() {
     })
 
     bot.on('message', function(event) {
+        let msg = event.message.text;
+        console.log(msg)
         if (event.message.type == 'text') {
-            let msg = event.message.text;
+            
             if (msg === 'help'){
                 // event.reply('您可以使用:' + '</br>' +'')
                 event.reply('目前尚未有任何功能 你要幫我嗎 :<')
