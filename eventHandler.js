@@ -8,9 +8,9 @@ require('dotenv').config();
 // });
 
 const bot = linebot({
-    channelId: CHANNEL_ID,
-    channelSecret: CHANNEL_SECRET,
-    channelAccessToken: CHANNEL_ACCESS_TOKEN
+    channelId: CHANNEL ID,
+    channelSecret: CHANNEL SECRET,
+    channelAccessToken: CHANNEL ACCESS TOKEN
 });
 
 const linebotParser = bot.parser();
@@ -28,7 +28,7 @@ function eventHandler() {
 
     bot.on('message', function(event) {
         let msg = event.message.text;
-        if (event.message.type == 'text') {
+        if (event.message.type === 'text') {
             
             if (msg === 'help'){
                 // event.reply('您可以使用:' + '</br>' +'')
