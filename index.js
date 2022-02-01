@@ -10,7 +10,12 @@ const bot = linebot({
 
 bot.on('message', function(event) {
     console.log(event); //把收到訊息的 event 印出來看看
-  });
+});
+
+bot.on('join',function(event){
+    console.log(event)
+    event.reply('近來先看記事本喔 (ゝ∀･)b 有事要跟大家商量')
+})
   
 const app = express();
 const linebotParser = bot.parser();
