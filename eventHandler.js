@@ -39,4 +39,10 @@ function eventHandler() {
     });
 }
 
+bot.push('U0891aac7763248897f66c525f69ca7f6',{
+    "type": "sticker",
+    "packageId": "446",
+    "stickerId": "1988"
+  })
+
 module.exports = {eventHandler,linebotParser}
