@@ -1,5 +1,5 @@
 const linebot = require('linebot');
-const {do_post} = require('./helper')
+// const {do_post} = require('./helper')
 require('dotenv').config();
 
 // const bot = linebot({
@@ -38,6 +38,13 @@ function eventHandler() {
             }
         }
     });
+}
+
+function do_post(to,msg){
+    bot.push(to,{
+        "type": "text",
+        "text": msg
+    })
 }
 
 do_post('U0891aac7763248897f66c525f69ca7f6', "Hello, world")
