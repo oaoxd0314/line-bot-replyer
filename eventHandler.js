@@ -1,4 +1,5 @@
 const linebot = require('linebot');
+const {do_post} = require('./helper')
 require('dotenv').config();
 
 // const bot = linebot({
@@ -39,10 +40,6 @@ function eventHandler() {
     });
 }
 
-bot.push('U0891aac7763248897f66c525f69ca7f6',{
-    "type": "sticker",
-    "packageId": "446",
-    "stickerId": "1988"
-  })
+do_post('U0891aac7763248897f66c525f69ca7f6', "Hello, world")
 
 module.exports = {eventHandler,linebotParser}
