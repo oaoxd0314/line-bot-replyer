@@ -28,7 +28,6 @@ function eventHandler() {
     })
 
     bot.on('message', function(event) {
-        console.log('this is message')
         console.log(event)
         let msg = event.message.text;
         if (event.message.type === 'text') {
