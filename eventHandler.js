@@ -44,7 +44,7 @@ function eventHandler() {
 function do_post(to,msg){
     bot.push(to,{
         "type": "text",
-        "text": "$ LINE emoji $",
+        "text": `$ LINE ${msg} $`,
         "emojis": [
           {
             "index": 0,
